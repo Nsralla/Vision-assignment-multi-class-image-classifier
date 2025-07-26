@@ -94,7 +94,7 @@ The repository contains clean, modular code for data handling, model training, a
 1. **Clone**
 
    ```bash
-   git clone https://github.com/<your-username>/advanced-computer-vision-assignment-2025.git
+   git clone [ https://github.com/<your-username>/advanced-computer-vision-assignment-2025.git](https://github.com/Nsralla/Vision-assignment-multi-class-image-classifier.git)
    cd advanced-computer-vision-assignment-2025
    ```
 2.Set up environment
