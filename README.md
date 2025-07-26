@@ -1,3 +1,5 @@
+
+### Project Requirements
 Arabic Handwritten Text Identification Using Local Feature Extraction Techniques
 1. Objective
 The goal of this assignment is to explore and apply local feature extraction techniques for identifying
@@ -34,3 +36,95 @@ method.
 3. Robustness: Test how well each method handles variations in scale, rotation, illumination, and
 noise.
 4. Number of Key Points: Compare the number of key points detected by each algorithm.
+
+
+
+
+
+
+# Advanced Computer Vision Assignment — 2025
+
+Full, reproducible workflow for the second computer-vision assignment of 2025.  
+The repository contains clean, modular code for data handling, model training, and evaluation, along with a polished PDF report for academic submission.
+
+---
+
+## Repository layout
+├── data/ # Raw / interim / processed image data
+
+│ ├── raw/
+
+│ ├── interim/
+
+│ └── processed/
+
+├── docs/
+
+│ └── assignment-report.pdf # 40-page write-up with results & discussion
+
+├── notebooks/
+
+│ └── assignment2_workflow.ipynb # Interactive end-to-end notebook
+
+├── src/ # Re-usable Python modules
+
+│ ├── init.py
+
+│ ├── datamodule.py # PyTorch-Lightning DataModule
+
+│ ├── models/
+
+│ │ ├── resnet.py
+
+│ │ └── vit.py
+
+│ ├── train.py # CLI entry-point (LightningCLI)
+
+│ └── utils.py # Helper functions
+
+├── tests/ # Unit tests (pytest)
+
+├── requirements.txt # Exact package versions
+
+└── README.md # You are here
+
+
+## Quick start
+
+1. **Clone**
+
+   ```bash
+   git clone https://github.com/<your-username>/advanced-computer-vision-assignment-2025.git
+   cd advanced-computer-vision-assignment-2025
+   ```
+2.Set up environment
+  ``` bash
+  python -m venv .venv
+  source .venv/bin/activate            # Windows: .venv\Scripts\activate
+  pip install -r requirements.txt
+  ```
+
+Organise data
+
+Place raw images in data/raw/ using the class-subfolder pattern described in the report
+(e.g. dog/img_001.jpg, cat/img_042.jpg).
+
+3.Run the notebook
+jupyter notebook notebooks/assignment2_workflow.ipynb
+or execute the full training pipeline from the command line:
+``` bash
+python src/train.py --config configs/resnet18.yaml
+```
+4. Read the report
+Open docs/assignment-report.pdf for methodology, results, and key insights.
+
+
+### Features
+1-Reproducible environment — strict requirements.txt, with optional Conda lockfile.
+
+2- Modular codebase — DataModule, model registry, and CLI for rapid experimentation.
+
+3- Clean architecture — clear separation of data, notebooks, core code, and tests.
+
+4- Comprehensive report — ready-to-submit PDF including figures, tables, and discussion.
+
